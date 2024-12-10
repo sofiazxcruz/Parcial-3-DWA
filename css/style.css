@@ -122,6 +122,7 @@ a:hover {
     color: #555; /* gris para que no sea tan pesado */
     line-height: 1.5; /* espaciado entre líneas */
     margin-top: 10px; /* espacio del texto con el resto */
+    display: none;
 }
 
 /* contenedor de imágenes */
@@ -174,6 +175,15 @@ a:hover {
     transform: scale(1.2); /* que se agranden cuando pasas el mouse */
 }
 
+.custom-descrip {
+    background-color: #f0f3f8;
+    border-radius: 1rem;
+}
+
+.custom-descrip:hover {
+    background-color: rgb(167, 196, 186);
+}
+
 /* footer */
 footer {
     background-color: #002060; /* azul univo */
@@ -210,3 +220,4 @@ footer {
         width: 100px; /* imágenes más pequeñas en móviles */
     }
 }
+
