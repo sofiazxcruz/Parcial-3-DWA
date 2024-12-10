@@ -1,0 +1,212 @@
+/* estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /* obvio, algo básico y bonito */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* fondito claro para no cansar la vista */
+    color: #333; /* color de texto neutro */
+}
+
+/* estilos para los enlaces */
+a {
+    text-decoration: none; /* sin subrayado porque no es necesario */
+    color: #002060; /* azul univo para mantener el branding */
+}
+
+a:hover {
+    text-decoration: underline; /* un detalle bonito cuando pasas el mouse */
+}
+
+/* encabezado */
+.layout {
+    background-color: #002060; /* azul univo */
+    color: white; /* letras blancas para contraste */
+}
+
+.header {
+    display: flex; /* acomodo flexible */
+    justify-content: space-between; /* que los logos y el título tengan su espacio */
+    align-items: center;
+    padding: 20px; /* espacio alrededor para que no se vea apretado */
+}
+
+.header h1 {
+    font-size: 24px; /* tamaño decente para el título */
+    flex: 1;
+    text-align: center; /* centrado porque se ve más profesional */
+}
+
+.header .logo {
+    height: 60px; /* tamaño estándar para los logos */
+}
+
+/* barra de navegación */
+.nav ul {
+    list-style: none; /* quitamos los puntitos feos de las listas */
+    padding: 0;
+    margin: 0;
+    display: flex; /* hacemos que los enlaces estén en línea */
+    justify-content: center; /* centramos los enlaces */
+    gap: 20px; /* espacio entre ellos */
+    flex-wrap: nowrap; /* evitamos que se bajen de línea */
+    overflow-x: auto; /* habilitamos scroll horizontal en caso de que no quepan */
+}
+
+.nav ul li a {
+    color: white; /* enlaces blancos para que se vean en el fondo azul */
+    font-weight: bold; /* que resalten */
+    font-size: 16px; /* tamaño decente para que se lean bien */
+    white-space: nowrap; /* evitamos que los textos se partan en varias líneas */
+    transition: color 0.3s ease; /* efecto suave al pasar el mouse */
+}
+
+.nav ul li a:hover {
+    color: #FFC000; /* dorado univo porque combina bien */
+}
+
+/* contenido */
+.content {
+    padding: 20px; /* espacio interno */
+    max-width: 1200px; /* que no se haga demasiado ancho */
+    margin: 0 auto; /* centrado en la página */
+}
+
+/* secciones */
+.section {
+    margin-bottom: 40px; /* espacio entre secciones */
+    padding-bottom: 20px;
+    border-bottom: 2px solid #FFC000; /* línea dorada para separar */
+}
+
+.section h2 {
+    color: #002060; /* azulito para los títulos */
+    border-bottom: 2px solid #FFC000; /* decoración con línea dorada */
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 20px; /* tamaño decente */
+    text-align: center; /* centrado porque todo se ve mejor */
+}
+
+/* proyectos */
+.projects {
+    display: flex; /* acomodo en línea */
+    flex-wrap: wrap; /* que se acomoden solitos si no caben */
+    gap: 20px; /* espacio entre los proyectos */
+    justify-content: center; /* todo centrado */
+}
+
+.project-item {
+    background-color: white; /* fondo clarito */
+    border: 1px solid #ccc; /* bordecito sutil */
+    border-radius: 8px; /* bordes redondeados porque cuadrados no */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombrita leve para profundidad */
+    width: 300px; /* tamaño estándar */
+    padding: 15px;
+    text-align: center; /* centrado */
+    transition: transform 0.3s, box-shadow 0.3s; /* animación suave */
+}
+
+.project-item:hover {
+    transform: translateY(-5px); /* se levanta un poquito */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* sombra más intensa */
+}
+
+.project-item h3 {
+    color: #002060; /* azulito para los títulos */
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.project-item .description {
+    font-size: 14px; /* texto más pequeño */
+    color: #555; /* gris para que no sea tan pesado */
+    line-height: 1.5; /* espaciado entre líneas */
+    margin-top: 10px; /* espacio del texto con el resto */
+}
+
+/* contenedor de imágenes */
+.images-container {
+    display: flex;
+    gap: 10px; /* espacio entre imágenes */
+    justify-content: center; /* centrado */
+    margin-bottom: 15px;
+}
+
+.images-container img {
+    width: 120px; /* tamaño estándar de las imágenes */
+    height: auto;
+    border-radius: 5px; /* bordes redondeados */
+    transition: transform 0.3s ease; /* efecto suave */
+}
+
+.images-container img:hover {
+    transform: scale(1.05); /* zoom cuando pasas el mouse */
+}
+
+/* sección de contactos */
+#contacts {
+    background-color: white; /* fondo clarito */
+    padding: 20px;
+    border-top: 2px solid #FFC000; /* línea dorada arriba */
+    border-bottom: 2px solid #FFC000; /* línea dorada abajo */
+    text-align: center; /* todo centrado */
+}
+
+#contacts h2 {
+    color: #002060; /* azulito */
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#contacts .social-media {
+    display: flex; /* íconos en fila */
+    justify-content: center; /* centrados */
+    gap: 20px; /* espacio entre ellos */
+}
+
+#contacts .social-media img {
+    width: 50px; /* tamaño decente */
+    height: 50px;
+    transition: transform 0.3s ease; /* animación suave */
+}
+
+#contacts .social-media img:hover {
+    transform: scale(1.2); /* que se agranden cuando pasas el mouse */
+}
+
+/* footer */
+footer {
+    background-color: #002060; /* azul univo */
+    color: white; /* letras blancas */
+    text-align: center; /* centrado */
+    padding: 10px 0; /* espacio interno */
+    font-size: 14px; /* tamaño pequeño */
+}
+
+/* diseño responsivo */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* acomodo vertical */
+        align-items: center; /* centrado */
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-wrap: nowrap; /* evitamos que los enlaces se bajen */
+        overflow-x: auto; /* habilitamos scroll horizontal si no caben */
+        gap: 10px; /* espacio entre enlaces */
+    }
+
+    .projects {
+        flex-direction: column; /* los proyectos se apilan */
+        gap: 20px;
+    }
+
+    .project-item {
+        max-width: 100%; /* que ocupen todo el ancho */
+    }
+
+    .images-container img {
+        width: 100px; /* imágenes más pequeñas en móviles */
+    }
+}
